@@ -1,23 +1,22 @@
-package java core.Java String.Level 1;
+import java.util.Scanner;
 
 public class q6 {
-      public static void generateException() {
-        String text = "Java";
-        System.out.println(text.substring(3, 1)); // start > end
+
+    public static void generateException(String text) {
+        System.out.println(text.substring(5, 2));
     }
 
-    public static void handleException() {
+    public static void handleException(String text) {
         try {
-            String text = "Java";
-            System.out.println(text.substring(3, 1));
+            System.out.println(text.substring(5, 2));
         } catch (IllegalArgumentException e) {
-            System.out.println("Handled IllegalArgumentException");
+            System.out.println("Caught IllegalArgumentException: " + e.getMessage());
         }
     }
 
     public static void main(String[] args) {
-        // generateException();
-        handleException();
+        Scanner sc = new Scanner(System.in);
+        String input = sc.next();
+        handleException(input);
     }
-
 }

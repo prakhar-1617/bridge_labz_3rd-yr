@@ -1,5 +1,3 @@
-package java core.Java String.Level 1;
-
 public class q4 {
     public static void generateException() {
         String text = null;

@@ -1,22 +1,24 @@
-package java core.Java String.Level 1;
+import java.util.Scanner;
 
 public class q7 {
-       public static void generateException() {
-        String text = "Hello";
-        int num = Integer.parseInt(text); // Not a number
+
+    public static void generateException(String text) {
+        int num = Integer.parseInt(text); 
+        System.out.println(num);
     }
 
-    public static void handleException() {
+    public static void handleException(String text) {
         try {
-            String text = "Hello";
             int num = Integer.parseInt(text);
+            System.out.println("Converted number: " + num);
         } catch (NumberFormatException e) {
-            System.out.println("Handled NumberFormatException");
+            System.out.println("Caught NumberFormatException: " + e.getMessage());
         }
     }
 
     public static void main(String[] args) {
-        // generateException();
-        handleException();
+        Scanner sc = new Scanner(System.in);
+        String input = sc.next();
+        handleException(input);
     }
 }

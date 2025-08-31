@@ -1,5 +1,4 @@
-package java core.Java String.Level 1;
-
+import java.util.*;
 public class q3 {
      public static char[] getChars(String text) {
         char[] chars = new char[text.length()];

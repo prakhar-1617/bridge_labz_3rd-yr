@@ -1,5 +1,4 @@
-package java core.Java String.Level 1;
-
+import java.util.*;
 public class q1 {
     public static boolean compareUsingCharAt(String s1, String s2) {
         if (s1.length() != s2.length()) return false;
@@ -21,5 +20,6 @@ public class q1 {
 
         System.out.println("Comparison using charAt(): " + userDefinedResult);
         System.out.println("Comparison using equals(): " + builtInResult);
+        sc.close();
     }
 }

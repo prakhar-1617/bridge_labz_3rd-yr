@@ -1,5 +1,4 @@
-package java core.Java String.Level 1;
-
+import java.util.Scanner;
 public class q2 {
       public static String createSubstring(String text, int start, int end) {
         String result = "";
@@ -32,5 +31,6 @@ public class q2 {
         System.out.println("User-defined substring: " + userDefinedSub);
         System.out.println("Built-in substring: " + builtInSub);
         System.out.println("Are both equal? " + compareStrings(userDefinedSub, builtInSub));
+    //sc.close();
     }
 }
